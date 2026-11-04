@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pankajsaini5884.github.io/medical-bill-help/sitemap.xml

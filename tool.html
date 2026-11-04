@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Medical Bill &amp; Insurance Appeal Letter Generator (private, in-browser)</title>
+<meta name="description" content="Free letter generator for an itemized hospital bill request, an internal appeal of a denied insurance claim, or a hospital financial-assistance request. Runs 100% in your browser; nothing is sent or saved.">
+<link rel="canonical" href="https://pankajsaini5884.github.io/medical-bill-help/tool.html">
+<meta name="robots" content="index, follow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0f5c8c">
+<meta property="og:site_name" content="Bill &amp; Denial Fighter Kit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Medical Bill &amp; Insurance Appeal Letter Generator (private, in-browser)">
+<meta property="og:description" content="Free letter generator for an itemized hospital bill request, an internal appeal of a denied insurance claim, or a hospital financial-assistance request. Runs 100% in your browser; nothing is sent or saved.">
+<meta property="og:url" content="https://pankajsaini5884.github.io/medical-bill-help/tool.html">
+<meta property="og:image" content="https://pankajsaini5884.github.io/medical-bill-help/assets/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Medical Bill &amp; Insurance Appeal Letter Generator (private, in-browser)">
+<meta name="twitter:description" content="Free letter generator for an itemized hospital bill request, an internal appeal of a denied insurance claim, or a hospital financial-assistance request. Runs 100% in your browser; nothing is sent or saved.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15 10.3 26.4 24 30 13.7-3.6 24-15 24-30V13L32 4z" fill="#0f5c8c"/><path d="M21 33.5l7.5 7.5L44 25.5" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bill &amp; Denial Fighter Kit</span></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="tool.html" aria-current="page">Free letter tool</a><a href="articles/index.html">Guides</a><a href="about.html">About</a><a class="btn sm" href="https://calmmindplanco.gumroad.com/l/medical-bill-fighter">Get the kit</a></nav>
+</div></header>
+<main id="main">
+
+<section class="hero" style="padding-bottom:28px"><div class="wrap">
+  <span class="eyebrow">Free tool</span>
+  <h1>Free medical bill &amp; appeal letter generator</h1>
+  <p class="lead">Pick a letter, fill in the form, and watch it write itself. Then copy, print, or download it.</p>
+  <div class="privacy-banner" role="note"><strong>Private by design.</strong>&nbsp;This tool runs 100% in your browser. Nothing you type is sent to any server, stored, or tracked &mdash; there are no cookies or analytics on this site. Closing or refreshing the page clears everything.</div>
+</div></section>
+<section style="padding-top:12px"><div class="wrap">
+<div class="tool">
+<form id="letterForm" novalidate>
+  <fieldset>
+    <legend>1. Choose a letter</legend>
+    <div class="letter-pick">
+      <label><input type="radio" name="letterType" value="itemized" checked><span>Itemized bill request</span></label>
+      <label><input type="radio" name="letterType" value="appeal"><span>Internal appeal of a denied claim</span></label>
+      <label><input type="radio" name="letterType" value="assistance"><span>Hospital financial-assistance request</span></label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>2. Your details</legend>
+    <div class="field"><label for="fName"><span>Your full name</span></label><input type="text" id="fName" data-key="name" placeholder="Jane Q. Patient" autocomplete="off"></div>
+    <div class="field"><label for="fAddress"><span>Your mailing address</span></label><textarea id="fAddress" data-key="address" placeholder="123 Main St
+Springfield, ST 00000"></textarea></div>
+    <div class="field"><label for="fContact"><span>Phone or email</span> <span class="hint">(optional)</span></label><input type="text" id="fContact" data-key="contact" placeholder="" autocomplete="off"></div>
+    <div class="field"><label for="fPatient"><span>Patient name</span> <span class="hint">(if different from you)</span></label><input type="text" id="fPatient" data-key="patient" placeholder="" autocomplete="off"></div>
+  </fieldset>
+  <fieldset>
+    <legend>3. Who it's going to</legend>
+    <div class="field"><label for="fRecipient"><span id="lblRecipient">Provider / hospital billing department</span></label><input type="text" id="fRecipient" data-key="recipient" placeholder="Name of hospital, provider or insurer" autocomplete="off"></div>
+    <div class="field"><label for="fRecipientAddress"><span>Their mailing address</span> <span class="hint">(optional; use the address on your bill or denial notice)</span></label><textarea id="fRecipientAddress" data-key="recipientAddress" placeholder=""></textarea></div>
+    <div class="field" data-only="appeal"><label for="fProvider"><span>Doctor or facility that provided the care</span></label><input type="text" id="fProvider" data-key="provider" placeholder="" autocomplete="off"></div>
+    <div class="field" data-only="appeal"><label for="fMemberId"><span>Member / ID number</span> <span class="hint">(from your insurance card)</span></label><input type="text" id="fMemberId" data-key="memberId" placeholder="" autocomplete="off"></div>
+  </fieldset>
+  <fieldset>
+    <legend>4. Numbers and dates</legend>
+    <div class="row2">
+      <div class="field"><label for="fNumber"><span id="lblNumber">Account / invoice number</span></label><input type="text" id="fNumber" data-key="number" placeholder="" autocomplete="off"></div>
+      <div class="field"><label for="fServiceDates"><span>Date(s) of service</span></label><input type="text" id="fServiceDates" data-key="serviceDates" placeholder="e.g. March 3–5, 2026" autocomplete="off"></div>
+      <div class="field"><label for="fNoticeDate"><span id="lblNoticeDate">Date on the bill</span></label><input type="date" id="fNoticeDate" data-key="noticeDate" placeholder="" autocomplete="off"></div>
+      <div class="field"><label for="fLetterDate"><span>Date of this letter</span></label><input type="date" id="fLetterDate" data-key="letterDate" placeholder="" autocomplete="off"></div>
+    </div>
+    <div class="field" data-only="appeal"><label><input type="checkbox" id="fUrgent" data-key="urgent"> This is urgent: waiting could seriously harm my health (request an expedited appeal)</label></div>
+  </fieldset>
+  <fieldset>
+    <legend>5. Reason</legend>
+    <div class="field"><label for="fReason"><span id="lblReason">Reason</span> <span class="hint" id="hintReason"></span></label>
+    <textarea id="fReason" data-key="reason" rows="6"></textarea></div>
+  </fieldset>
+  <button type="button" class="btn ghost sm" id="btnClear">Clear form</button>
+</form>
+<div class="preview-wrap">
+  <h2 style="font-size:1.2rem">Live preview</h2>
+  <div id="letterPreview" class="preview" aria-live="polite" aria-label="Letter preview"></div>
+  <div class="btn-row">
+    <button type="button" class="btn" id="btnCopy">Copy</button>
+    <button type="button" class="btn ghost" id="btnPrint">Print</button>
+    <button type="button" class="btn ghost" id="btnDownload">Download .txt</button>
+  </div>
+  <p class="status" id="status" role="status"></p>
+  <div class="note"><strong>Before you send:</strong> check every bracketed [item] is filled in, keep a copy, and follow any address, form, or deadline given in your bill or denial notice. For an appeal, the usual deadline to file is 180 days from the denial notice (<a href="https://www.healthcare.gov/appeal-insurance-company-decision/internal-appeals/" rel="noopener">HealthCare.gov</a>), but use the date in your own notice.</div>
+</div>
+</div>
+</div></section>
+<section class="alt"><div class="wrap">
+  <div class="cta-box">
+    <h2>Need all 15 letters + deadline tracker?</h2>
+    <p>Letters for billing disputes, insurance appeals, financial assistance and collections, plus a 25-page guide.</p>
+    <a class="btn" href="https://calmmindplanco.gumroad.com/l/medical-bill-fighter">Get the full kit &mdash; $17</a>
+  </div>
+</div></section>
+
+</main>
+<footer class="site-foot"><div class="wrap">
+<nav aria-label="Footer"><a href="index.html">Home</a><a href="tool.html">Free letter tool</a><a href="articles/index.html">Guides</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="https://calmmindplanco.gumroad.com/l/medical-bill-fighter">Get the kit ($17)</a></nav>
+<p class="disclaimer">Self-help educational material, not legal, medical or financial advice. No guarantee of results.</p>
+<p>Information on this site is general and may not apply to your plan, state, or situation. Deadlines and rights vary; check your own plan documents and notices, and contact your state's consumer assistance program or a licensed professional if you need advice.</p>
+<p>No cookies, no analytics, no trackers. &copy; <span>2026</span> Bill &amp; Denial Fighter Kit.</p>
+</div></footer>
+<script src="assets/letters.js" defer></script><script src="assets/tool.js" defer></script>
+</body>
+</html>
