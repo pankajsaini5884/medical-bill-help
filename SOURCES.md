@@ -17,3 +17,8 @@
 | Statute of limitations most often 3–6 years, varies by state | https://www.consumerfinance.gov/consumer-tools/debt-collection/answers/key-terms/ |
 
 Not used (could not verify on an official page this session): medical-debt credit-reporting thresholds/waiting periods (CFPB 2025 rule status and credit-bureau voluntary policies).
+
+## Added 2026-11-05
+| Pre-service (prior authorization) claims: urgent decision ≤72 h; pre-service ≤15 days (+15 extension); pre-service appeal ≤30 days (15 per level if two levels); urgent appeal ≤72 h; denial notice contents | https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/filing-a-claim-for-your-health-benefits |
+| Negotiation: hospital price transparency search, ask nearby facilities about CPT codes / "usual, customary, and reasonable charge", ask for payment plan or reduction, note names & reference numbers | https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/guides-resources/talk-your-provider-about-bill |
+| Providers can sometimes lower the price / offer payment plans | https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/find-action-plan/medical-bill-payment-options |
